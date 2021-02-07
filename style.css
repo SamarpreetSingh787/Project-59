@@ -1,3 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    text-align: center;
+}
+
 #welcome {
     text-align: center;
     background: linear-gradient(#020024 0%, #f2f309 100%);
@@ -54,32 +61,32 @@ h2 {
 }
 
 p {
-    text-shadow: 2px 2px #F8BBDO;
     font-family: 'Lobster Two', cursive;
 }
 
 .menu {
     list-style: none;
     font-family: 'Lobster', cursive;
+    background: white;
     position: fixed;
-    top: 10px;
+    top: 0px;
     right: 30px;
-    float: right;
+    z-index: 10;
     cursor: pointer;
+    width: 100%;
+    margin-top: 0px;
 }
 
 .link {
-    float: left;
+    display: inline;
     color: #3309f3;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 9px;
-    padding-right: 9px;
-    font-family: 'Kaushan Script';
+    padding-left: 33px;
+    padding-right: 25px;
+    font-family: 'Dancing Script';
     font-size: 20px;
 }
 
-img {
+a img {
     width: 250px;
     margin-bottom: 50px;
     border-radius: 50%;
@@ -87,11 +94,14 @@ img {
 }
 
 .link:hover {
+    text-decoration: underline;
     background-color: #e6f309;
+    font-size: 25px;
 }
 
 a {
     text-decoration: none;
+    color: #00ff07;
 }
 
 .line {
@@ -111,9 +121,12 @@ a {
     display: inline-block;
     font-size: 16px;
 }
+
 img {
     transition: transform .2s;
-    border:10px solid #000;
+    height: 400px;
+    width: 300px;
+    border-radius: 50%;
 }
 
 img:hover {
